@@ -4,7 +4,7 @@ import { useAppContext } from '../context/AppContext.jsx';
 
  const ProductCard = ({product}) => {
 
-    const {currency,addToCart,updateCartItem,removeCartItem, cartItems, navigate} = useAppContext()
+    const {currency,addToCart,removeCartItem, cartItems, navigate} = useAppContext()
       return product && (
           <div 
           onClick={()=>{navigate(`/products/${product.category.toLowerCase()}/${product._id}`);
